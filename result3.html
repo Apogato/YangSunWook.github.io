@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="https://new-year.spartacodingclub.kr/images/favicon.png">
+    <meta property="og:title" content="2021 새해연하장" />
+    <meta property="og:description" content="늦었지만 새해복 마니 받으세여" />
+    <meta property="og:image" content="https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/01/urbanbrush-20190115231002252048.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 새해연하장</title>
+    <script type="text/javascript" src="https://new-year.spartacodingclub.kr/newyear.js"></script>
+    <style>
+        .mytitle {
+            color: darkred;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        .mytitle>h1 {
+            font-size: 56px;
+            margin-bottom: 0;
+        }
+
+        body {
+            background-color: ivory;
+            background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
+            background-position: 600px 100px;
+            background-repeat: no-repeat
+        }
+
+        * {
+            font-family: 'Yeon Sung', cursive;
+        }
+
+        .rtan {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: solid 3px darkred;
+            background-color: darkred;
+            box-shadow: 0px 0px 10px 0px darkred;
+            border-radius: 200px;
+            margin: 80px auto 50px auto;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://images.ddengle.com/files/attach/images/894001/762/058/003/895cb103b9555bd6c6042ebb15a42a9e.gif');
+            color: blueviolet;
+            text-align: center;
+            font-size: 32px;
+            text-decoration: none;
+        }
+
+        .title {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .msg {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .btn-back {
+            width: 150px;
+            height: 50px;
+            color: darkred;
+            border: solid 2px darkred;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        .btn-share {
+            width: 150px;
+            height: 50px;
+            color: white;
+            border: solid 2px darkred;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: darkred;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 780px) {
+            body {
+                background-position: 70px -70px;
+                background-size: 500px;
+            }
+
+            .rtan {
+                margin-top: 50px;
+            }
+
+            .msg {
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 36px;
+                padding: 10px;
+            }
+        }
+    </style>
+    <script>
+        function back() {
+            let url = window.location.href;
+            let new_url = url.split('result3.html')[0] + 'index1.html';
+            window.location.href = new_url;
+        }
+        function share() {
+            alert('여기 0U')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="rtan">욱</div>
+    <h1 class="title">욱!</h1>
+    <p class="msg">
+        욱쓰로 반갑고 좋네~<br/>
+        가끔씩이어도 소식 들으니 기분 좋다.<br/>
+        ㅎㅎ 새해인사라기엔 늦었지만<br/> 
+        새해 복 많이 받아!<br/>
+        이번 해도 무탈하게 잘 지내고~ <br/>
+        좋은 일 많길 기원한다!<br/>
+    </p>
+    <div class="btns">
+        <button onclick="back();" class="btn-back">뒤로가기</button>
+        <button onclick="share();" class="btn-share">공유할래?</button>
+    </div>
+</body>
+
+</html>
